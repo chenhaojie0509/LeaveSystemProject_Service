@@ -1,13 +1,13 @@
 
 /*
  * @Author: Post_Malone
- * @Description: 
+ * @Description:
  * @Data: Do not edit
  * @FilePath: \leaveSystemProject_serves\app\middleware\error_handler.js
  * @LastEditors: chenhaojie
- * @LastEditTime: 2022-10-16 20:27:52
+ * @LastEditTime: 2022-10-26 22:38:17
  */
-module.exports = (option, app) => {
+module.exports = () => {
   return async function errorHandler(ctx, next) {
     try {
       await next();
@@ -101,7 +101,7 @@ module.exports = (option, app) => {
       // 从 error 对象上读出各个属性，设置到响应中
       ctx.body = { error };
       ctx.status = status;
-      return
+      return;
     }
   };
 };

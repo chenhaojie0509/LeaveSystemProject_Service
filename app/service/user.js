@@ -1,6 +1,6 @@
 /*
  * @Author: Post_Malone
- * @Description: 
+ * @Description:
  * @Data: Do not edit
  * @FilePath: \leaveSystemProject_serves\app\service\user.js
  * @LastEditors: chenhaojie
@@ -12,12 +12,12 @@ const Service = require('egg').Service;
 class UserService extends Service {
   async getUserByNameAndType(id, type) {
     const statements = [
-      `select * from student where s_id = ?`,
-      `select * from teacher where t_id = ?`,
-      `select * from adminstrators where a_id = ?`
-    ]
+      'select * from student where s_id = ?',
+      'select * from teacher where t_id = ?',
+      'select * from adminstrators where a_id = ?',
+    ];
 
-    const result = await this.app.mysql.query(statements[type], id)
+    const result = await this.app.mysql.query(statements[type], id);
     // console.log(result);
     return result;
   }

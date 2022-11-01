@@ -1,10 +1,10 @@
 /*
  * @Author: Post_Malone
- * @Description: 
+ * @Description:
  * @Data: Do not edit
  * @FilePath: \leaveSystemProject_serves\config\plugin.js
  * @LastEditors: chenhaojie
- * @LastEditTime: 2022-09-27 10:07:26
+ * @LastEditTime: 2022-11-01 17:20:02
  */
 'use strict';
 
@@ -16,7 +16,7 @@ module.exports = {
   // }
   mysql: {
     enable: true,
-    package: 'egg-mysql'
+    package: 'egg-mysql',
   },
   jwt: {
     enable: true,
@@ -29,5 +29,9 @@ module.exports = {
   validate: {
     enable: true,
     package: 'egg-validate',
+  },
+  sequelize:{
+    enable:true,
+    package:'egg-sequelize'
   }
-}
+};

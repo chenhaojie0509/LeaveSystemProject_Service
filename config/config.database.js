@@ -1,6 +1,6 @@
 /*
  * @Author: Post_Malone
- * @Description: 
+ * @Description:
  * @Data: Do not edit
  * @FilePath: \leaveSystemProject_serves\config\config.database.js
  * @LastEditors: chenhaojie
@@ -25,4 +25,4 @@ module.exports = {
   app: true,
   // 是否加载到 agent 上，默认关闭
   agent: false,
-}
+};
