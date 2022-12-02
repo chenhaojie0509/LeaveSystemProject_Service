@@ -4,13 +4,12 @@
  * @Data: Do not edit
  * @FilePath: \leaveSystemProject_serves\config\config.default.js
  * @LastEditors: chenhaojie
- * @LastEditTime: 2022-10-26 22:41:56
+ * @LastEditTime: 2022-11-01 21:40:16
  */
 /* eslint valid-jsdoc: "off" */
 
 'use strict';
 
-const mysql = require(__dirname + '/config.database');
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -20,7 +19,6 @@ module.exports = appInfo => {
    * @type {Egg.EggAppConfig}
    **/
   const config = exports = {
-    mysql,
   };
 
   // use for cookie sign key, should change to your own and keep security
@@ -72,7 +70,14 @@ module.exports = appInfo => {
       enable: false,
     },
   };
-
+  exports.sequelize = {
+    dialect: 'mysql',
+    host: 'localhost',
+    port: 3307,
+    user: 'root',
+    password: '050900',
+    database: 'project_demo1',
+  };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

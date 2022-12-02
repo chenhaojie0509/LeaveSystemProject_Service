@@ -4,7 +4,7 @@
  * @Data: Do not edit
  * @FilePath: \leaveSystemProject_serves\config\plugin.js
  * @LastEditors: chenhaojie
- * @LastEditTime: 2022-11-01 17:20:02
+ * @LastEditTime: 2022-11-01 21:09:08
  */
 'use strict';
 
@@ -14,9 +14,9 @@ module.exports = {
   // static: {
   //   enable: true,
   // }
-  mysql: {
+  mysql2: {
     enable: true,
-    package: 'egg-mysql',
+    package: 'egg-mysql2',
   },
   jwt: {
     enable: true,
